@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-function PostScreen() {
+function PostScreen({route}) {
+  const {postId} = route.params;
+
   return (
     <View style={styles.center}>
-      <Text>PostScreen</Text>
+      <Text>{postId}</Text>
     </View>
   );
 }
